@@ -4,7 +4,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>j9999.dev</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌩️</text></svg>">
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #fafaf9;
+            color: #0c0a09;
+        }
+        body {
+            padding: 0 16px;
+        }
+        h1 {
+            text-align: center;
+            margin: 64px 0;
+        }
+        h2 {
+            margin-top: 32px;
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                padding: 0 25%;
+            }
+            h1 {
+                margin: 128px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>🌩️ j9999.dev</h1>
+    <h2>Bazel</h2>
+    <p>To use j9999.dev for Bazel remote build execution, build with:</p>
+    <pre>
+        --remote_cache=grpc://rbe.j9999.dev:8980 \
+        --remote_executor=grpc://rbe.j9999.dev:8980
+    </pre>
+    <h2>Goma</h2>
+    <p>Coming soon?</p>
+    <h2>sccache</h2>
+    <p>Coming soon?</p>
 </body>
